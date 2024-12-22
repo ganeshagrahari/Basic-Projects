@@ -1,0 +1,249 @@
+/*Css  reset*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS variables */
+:root {
+    --navbar-height: 59px;
+}
+
+
+
+/*Navigation bar: Logo and */
+#logo {
+    margin: 3px 5px;
+}
+
+#logo img {
+    margin: 3px 45px;
+    width: 130px;
+    height: 115px;
+    border-radius: 50%;
+
+}
+
+/*Navigation bar: List  styling*/
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.01;
+}
+
+#navbar ul li {
+
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: #582121;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/*Home section*/
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 414px;
+}
+
+#home::before {
+    content: "";
+    background: url('back2.jpeg') no-repeat center center/cover;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: .88;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1 {
+    text-align: center;
+    font-size: 2.9rem;
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* sevices section */
+
+#services {
+    margin: 34px;
+    display: flex;
+
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 45px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(240, 234, 234);
+
+
+
+}
+
+#services .box img {
+    height: 150px;
+    display: block;
+    margin: auto;
+
+}
+
+#services .box p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* client section */
+#client-section {
+    height: 560px;
+
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('back3.avif');
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 34px 40px;
+}
+
+#clients img {
+    height: 170px;
+}
+
+.client-items {
+    padding: 37px;
+
+}
+
+/*contact-section*/
+#contact {
+    position: relative;
+    
+
+}
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url('contact.jpg') no-repeat center center/cover  ;
+    
+}
+#contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contactbox input,
+#contactbox textarea{
+    width: 100%;
+    padding: .5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+#contactbox form{
+    width: 40%;
+
+}
+#contactbox form label{
+     font-size: 1.3rem;
+     font-family:'Pacifico', cursive ;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* Utility classes */
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.h-secondry {
+    font-size: 2.1rem;
+    padding: 12px;
+    font-family: 'Pacifico', cursive;
+}
+
+.btn {
+    
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: white;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s s ease-in-out .2s ;
+   
+}
+
+
+.center {
+    text-align: center;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100&display=swap" rel="stylesheet">
+    <style>
+        /* CSS reset*/
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Balsamiq Sans', cursive;
+            background-image: url('img/kll.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+          
+
+        }
+
+
+        .left {
+          
+            color: white;
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 18px;
+
+
+
+        }
+
+        .center {
+            border: 2px solid black;
+            color: white;
+            display: block;
+            width: 60%;
+            margin: 10px auto;
+            
+
+        }
+
+        .right {
+     
+            color: white;
+            display: inline-block;
+            position: absolute;
+            right: 3px;
+            top: 8px;
+
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .navbar li {
+            display: inline-block;
+            color: white;
+            font-size: 27px;
+            list-style: none;
+            
+
+
+        }
+
+        .navbar li a {
+            color: aliceblue;
+            padding: 10px 31px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover,
+        .active {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .left img {
+            width: 138px;
+            filter: invert(100%);
+
+        }
+
+        .btn {
+            margin: 10px 9px;
+            color: white;
+            background-color: black;
+            padding: 6px 7px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 12px;
+            cursor: pointer;
+            font-family: 'Balsamiq Sans', cursive ;
+
+        }
+
+        .btn:hover {
+
+            background-color: rgb(43, 43, 43);
+        }
+        .container{
+            border: 2px solid white;
+            margin: 64px 120px;
+            padding: 15px 17px;
+            width: 31%;
+            border-radius: 25px ;
+            color: aliceblue;font-size: larger;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 260px;
+            padding: 0px;
+            border: 2px solid gray;
+            margin: 0px auto;
+            font-size: 18px;
+            font-family: 'Balsamiq Sans', cursive;
+        }
+        .container h1{
+            text-align: center;
+            font-size: 20px;
+        }
+        .container button{
+            display: block;
+            width: 23%;
+            margin: 28px auto;
+        }
+
+ 
+
+    </style>
+</head>
+
+<body >
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="img/ngg.png
+            " alt="">
+
+
+
+        </div>
+        <div class="center">
+            <!-- center box for navigation bar -->
+            <ul class="navbar">
+                <li><a href="C:\Users\Ganesh Agrahari\OneDrive\Desktop\project of wed\project-1\newwebsite.html" class="active">Home</a> </li>
+                <li><a href="C:\Users\Ganesh Agrahari\OneDrive\Desktop\project of wed\project-3\HTML  project.html" class="active"> About us</a> </li>
+                <li><a href="#" class="active">Fitness Center</a> </li>
+                <li><a href="#" class="active">Contact Us</a> </li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right box for button -->
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+    <h1>Join the best GYM of Unchahar</h1>
+    <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name"><br>
+            <input type="text" name="" placeholder="Enter your Age"><br>
+            <input type="text" name="" placeholder="Enter your Gender"><br>
+            <input type="text" name="" placeholder="Enter your Locality"><br>
+            <input type="text" name="" placeholder="Enter your Email"><br>
+            <input type="text" name="" placeholder="Enter your Phone no.">
+        </div>
+        <button class="btn">Submit</button>
+
+    </form>
+    </div>
+
+
+</body>
+
+</html>
